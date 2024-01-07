@@ -51,7 +51,10 @@ VALUES('integer-name'
 GO
 
 ```
-
+### UI projesinde connection string  appsettings.json dosyasına aşağıdaki gibi eklenmelidir. 
+"ConnectionStrings":{
+"BeymenDb": "{{CONNECTION_STRING}}"
+}
 
 
 
