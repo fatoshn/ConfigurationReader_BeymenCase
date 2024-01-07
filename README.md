@@ -39,8 +39,8 @@ VALUES('integer-name'
        ,1
        ,'test-app'),
        ('string-name'
-       ,'Integer'
-       ,22
+       ,'String'
+       ,'test-name'
        ,1
        ,'test-app'),
        ('boolean-name'
