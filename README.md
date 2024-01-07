@@ -57,7 +57,7 @@ GO
 }
 
 
-###Configuration.Integration.Test altında bulunan test classında da connectionstring alanı düzenlenecek. 
+### Configuration.Integration.Test altında bulunan test classında da connectionstring alanı düzenlenecek. Run tests yapılabilir sonra. 
 
 
 
