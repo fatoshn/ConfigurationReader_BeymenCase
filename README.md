@@ -2,8 +2,9 @@
 
 Davranışsal tasarım desenlerinden olan MediatorPattern ile geliştirilmiş case projesidir. 
 
-Database olarak Mssql kullanılmış olup aşağıdaki tablonun  create edilmesi gerekmektedir. 
+### Database olarak Mssql kullanılmış olup aşağıdaki tablonun  create edilmesi gerekmektedir. 
 
+```sql
 CREATE TABLE [dbo].[Configuration](
 	[ID] [int] IDENTITY(1,1) NOT NULL,
 	[Name] [varchar](50) NULL,
@@ -18,13 +19,14 @@ CREATE TABLE [dbo].[Configuration](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
+```
 
 
-Tablo create edildikten sonra aşaıdaki veriler insert edilmelidir. 
+### Tablo create edildikten sonra aşaıdaki veriler insert edilmelidir. 
 
+```sql
 USE [BeymenCodeCaseDB]
 GO
-
 INSERT INTO [dbo].[Configuration]
            ([Name]
            ,[Type]
@@ -36,21 +38,19 @@ VALUES('integer-name'
        ,2
        ,1
        ,'test-app'),
-
-		('string-name'
+       ('string-name'
        ,'Integer'
        ,22
        ,1
        ,'test-app'),
-
-	   ('boolean-name'
+       ('boolean-name'
        ,'Boolean'
        ,1
        ,1
        ,'test-app')
 GO
 
-
+```
 
 
 
